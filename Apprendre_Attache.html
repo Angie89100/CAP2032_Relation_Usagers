@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apprendre à rédiger comme un attaché — 100 exercices guidés</title>
+<style>
+:root{
+  --bg:#f3f6fb;--card:#fff;--text:#0f172a;--muted:#52627a;--line:#d9e2ef;
+  --primary:#2563eb;--dark:#172554;--green:#15803d;--orange:#f59e0b;--red:#dc2626;
+  --soft:#eff6ff;--shadow:0 16px 40px rgba(15,23,42,.08)
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
+header{background:linear-gradient(135deg,#111827,#1e3a8a);color:#fff;padding:34px 20px}
+.header-inner{max-width:1180px;margin:auto;display:grid;grid-template-columns:1.2fr .8fr;gap:22px;align-items:center}
+h1{margin:0 0 10px;font-size:34px}h2{margin:0 0 12px;color:#172554}h3{margin:0 0 10px;color:#172554}
+.subtitle{color:#dbeafe;font-size:17px;margin:0}.hero-card{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.25);border-radius:22px;padding:18px}.hero-card strong{font-size:30px;display:block}
+main{max-width:1180px;margin:auto;padding:24px 16px 60px}.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:20px;box-shadow:var(--shadow);margin-bottom:18px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.level-card{border:1px solid var(--line);border-radius:18px;padding:16px;background:#f8fafc;cursor:pointer;transition:.2s}.level-card:hover{transform:translateY(-2px)}.level-card.active{border-color:var(--primary);outline:3px solid #bfdbfe;background:#eff6ff}.level-icon{font-size:34px}
+.small{font-size:13px;color:var(--muted)}.muted{color:var(--muted)}.badge{display:inline-block;border-radius:999px;background:#eef2ff;border:1px solid #c7d2fe;color:#172554;font-weight:bold;padding:6px 10px;font-size:12px;margin:3px}.badge.ok{background:#ecfdf5;border-color:#86efac;color:#14532d}.badge.warn{background:#fff7ed;border-color:#fed7aa;color:#9a3412}.badge.bad{background:#fef2f2;border-color:#fecaca;color:#991b1b}
+.controls{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}button{border:0;border-radius:13px;background:var(--primary);color:#fff;font-weight:bold;padding:11px 14px;cursor:pointer}button.light{background:#e5e7eb;color:#111827}button.good{background:var(--green)}button.orange{background:var(--orange);color:#111827}button.red{background:var(--red)}button:disabled{opacity:.55;cursor:not-allowed}
+select,textarea{width:100%;border:1px solid #cbd5e1;border-radius:12px;padding:11px;font-size:15px;background:#fff}textarea{min-height:110px;resize:vertical}
+.exercise{border:1px solid var(--line);border-radius:20px;background:#fff;padding:18px;margin-bottom:14px}.exercise-head{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:flex-start}.mission{background:#eff6ff;border:1px solid #bfdbfe;border-left:6px solid #2563eb;border-radius:16px;padding:14px;margin:12px 0}.doc-text{background:#f8fafc;border:1px dashed #94a3b8;border-radius:16px;padding:14px;font-size:16px}.steps{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}.step{background:#f8fafc;border:1px solid var(--line);border-radius:16px;padding:13px}.vocab-table{width:100%;border-collapse:collapse;font-size:14px}.vocab-table th,.vocab-table td{border:1px solid var(--line);padding:8px;text-align:left}.vocab-table th{background:#eef2ff;color:#172554}
+.correction{display:none;background:#ecfdf5;border:1px solid #86efac;border-radius:16px;padding:14px;margin-top:12px}.correction.show{display:block}.analysis-box{display:none;margin-top:12px;border-radius:16px;padding:14px;border:1px solid #bfdbfe;background:#eff6ff}.analysis-box.show{display:block}.analysis-box.bad{background:#fef2f2;border-color:#fecaca}.analysis-box.warn{background:#fff7ed;border-color:#fed7aa}.scorebar{height:13px;background:#e5e7eb;border-radius:999px;overflow:hidden;margin-top:8px}.scorebar span{display:block;height:100%;background:#2563eb;width:0%}.mini-bar{height:9px;background:#e5e7eb;border-radius:999px;overflow:hidden}.mini-bar span{display:block;height:100%;background:#2563eb;width:0%}
+.stats{position:sticky;top:0;z-index:10;background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px;box-shadow:var(--shadow);margin-bottom:18px}.stat-number{font-size:26px;color:#1d4ed8;font-weight:bold;display:block}.guide-box{background:#fff7ed;border:1px solid #fed7aa;border-left:6px solid #f59e0b;border-radius:18px;padding:16px}.criteria{font-size:14px}.criteria td{padding:4px 6px;border-bottom:1px solid #dbe4f0}
+@media(max-width:900px){.header-inner,.grid-4,.grid-3,.grid-2,.steps{grid-template-columns:1fr}}@media print{button,.controls,.stats,textarea{display:none!important}body{background:#fff}.card,.exercise{box-shadow:none}.correction,.analysis-box{display:block!important}}
+</style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <div>
+      <h1>🧠 Apprendre à rédiger comme un attaché</h1>
+      <p class="subtitle">100 exercices progressifs avec analyse automatique : mots-clés, vocabulaire administratif, structure, neutralité et cohérence.</p>
+    </div>
+    <div class="hero-card"><strong>Objectif concours</strong>Transformer une idée simple en formulation administrative claire, neutre et exploitable dans une note.</div>
+  </div>
+</header>
+<main>
+<section class="card">
+  <h2>👩‍🏫 Guide très simple</h2>
+  <div class="guide-box"><strong>Le bouton ne donne plus les points automatiquement.</strong><br>Il analyse maintenant votre réponse. Une suite de lettres ou une réponse incohérente donne 0 point.</div>
+  <div class="grid-3" style="margin-top:14px">
+    <div class="step"><h3>1. Je repère</h3><p>Qui est concerné ? Quel problème ? Quelle conséquence ?</p></div>
+    <div class="step"><h3>2. Je traduis</h3><p>“Manque” devient “besoin”. “Problème” devient “difficulté”.</p></div>
+    <div class="step"><h3>3. Je rédige</h3><p>Phrase neutre, claire, structurée, sans jugement personnel.</p></div>
+  </div>
+</section>
+<section class="stats">
+  <div class="grid-4">
+    <div><span class="stat-number" id="doneCount">0</span>Exercices validés</div>
+    <div><span class="stat-number" id="scoreCount">0 / 1750</span>Points</div>
+    <div><span class="stat-number" id="successRate">0%</span>Progression</div>
+    <div><span class="stat-number" id="rankName">Apprenti rédacteur</span>Badge actuel</div>
+  </div>
+  <div class="scorebar"><span id="bar"></span></div>
+  <div id="badges" style="margin-top:10px"></div>
+</section>
+<section class="card">
+  <h2>🎮 Choisir mon niveau</h2>
+  <div class="grid-4" id="levelCards"></div>
+  <div class="controls">
+    <select id="themeFilter" onchange="renderExercises()"><option value="Tous">Tous les thèmes</option></select>
+    <button onclick="setLevel('Tous')">Afficher les 100 exercices</button>
+    <button class="light" onclick="resetProgress()">Remettre le score à zéro</button>
+    <button class="light" onclick="window.print()">Imprimer avec corrections</button>
+  </div>
+</section>
+<section class="card">
+  <h2>✍️ Exercices guidés</h2>
+  <p class="muted">Rédigez votre réponse, puis cliquez sur <strong>Analyser ma réponse</strong>. Les points sont attribués selon la qualité réelle de la réponse.</p>
+  <div id="exerciseList"></div>
+</section>
+</main>
+<script>
+const levelData={
+  "Débutant":{icon:"🟢",badge:"Apprenti rédacteur",desc:"Transformer une phrase simple",points:10},
+  "Intermédiaire":{icon:"🔵",badge:"Chargé de mission",desc:"Regrouper deux idées",points:15},
+  "Concours":{icon:"🟠",badge:"Futur attaché",desc:"Rédiger un diagnostic",points:20},
+  "Expert":{icon:"🔴",badge:"Attaché territorial",desc:"Constat + enjeu + action",points:25}
+};
+const themes=[
+ {theme:"RH",base:"Les agents indiquent manquer de formation sur les nouveaux logiciels.",keys:["agents","formation","logiciels","compétences","accompagnement"],vocab:{"manquer":"besoin","formation":"développement des compétences","logiciels":"outils numériques"},corr:"Un besoin de développement des compétences numériques est identifié afin d'accompagner la prise en main des nouveaux outils déployés au sein des services."},
+ {theme:"Usagers",base:"Les usagers attendent trop longtemps avant d'obtenir une réponse.",keys:["usagers","délais","réponse","traitement","demandes"],vocab:{"attendre":"allongement des délais","réponse":"traitement des demandes","usagers":"usagers"},corr:"L'allongement des délais de réponse génère une insatisfaction des usagers et invite la collectivité à améliorer l'organisation du traitement des demandes."},
+ {theme:"Finances",base:"Les dépenses d'énergie des bâtiments municipaux augmentent fortement.",keys:["dépenses","énergie","bâtiments","budget","consommations"],vocab:{"augmentent":"hausse significative","bâtiments municipaux":"patrimoine municipal","dépenses":"contrainte budgétaire"},corr:"La hausse des dépenses énergétiques du patrimoine municipal constitue une contrainte budgétaire et justifie une démarche de maîtrise des consommations."},
+ {theme:"Numérique",base:"Beaucoup d'habitants ne savent pas utiliser les démarches en ligne.",keys:["habitants","démarches","numériques","accompagnement","service public"],vocab:{"ne savent pas":"éloignement numérique","démarches en ligne":"démarches numériques","aide":"accompagnement"},corr:"Une partie des habitants demeure éloignée des démarches numériques, ce qui nécessite un accompagnement renforcé afin de garantir l'accès au service public."},
+ {theme:"Management",base:"Les agents disent ne pas comprendre les décisions de la direction.",keys:["agents","décisions","direction","communication","orientations"],vocab:{"ne pas comprendre":"besoin de clarification","décisions":"orientations","direction":"encadrement"},corr:"Un besoin de clarification de la communication interne apparaît afin de favoriser l'appropriation des orientations portées par la direction."},
+ {theme:"Recrutement",base:"La collectivité a du mal à recruter sur plusieurs métiers.",keys:["collectivité","recrutement","métiers","attractivité","service public"],vocab:{"a du mal":"rencontre des difficultés","recruter":"attractivité","métiers":"filières"},corr:"La collectivité rencontre des difficultés d'attractivité sur plusieurs métiers, ce qui peut fragiliser la continuité et la qualité du service public."},
+ {theme:"Transition écologique",base:"Les déplacements professionnels se font surtout en voiture individuelle.",keys:["déplacements","voiture","mobilité","durable","transition"],vocab:{"surtout":"prédominance","voiture individuelle":"véhicule individuel","se font":"s'organisent"},corr:"La prédominance du véhicule individuel dans les déplacements professionnels limite la transition vers des mobilités plus durables."},
+ {theme:"Handicap",base:"Les bâtiments ne sont pas toujours faciles d'accès pour les personnes handicapées.",keys:["bâtiments","accessibilité","handicap","conformité","accueil"],vocab:{"pas faciles d'accès":"accessibilité incomplète","personnes handicapées":"personnes en situation de handicap","bâtiments":"équipements"},corr:"L'accessibilité incomplète de certains bâtiments limite l'accueil des personnes en situation de handicap et nécessite une mise en conformité progressive."},
+ {theme:"Organisation",base:"Chaque service travaille de son côté et les informations circulent mal.",keys:["services","cloisonnement","information","coordination","organisation"],vocab:{"travaille de son côté":"cloisonnement","circulent mal":"circulation insuffisante","informations":"information interne"},corr:"Le cloisonnement des services et la circulation insuffisante de l'information nuisent à la coordination interne."},
+ {theme:"Qualité",base:"Les habitants se plaignent de la qualité de l'accueil.",keys:["habitants","accueil","réclamations","qualité","usager"],vocab:{"se plaignent":"réclamations","qualité de l'accueil":"qualité de la relation usager","habitants":"usagers"},corr:"Les réclamations relatives à l'accueil traduisent une attente d'amélioration de la qualité de la relation usager."}
+];
+function makeExercises(){
+ let arr=[],id=1; const levels=Object.keys(levelData);
+ for(const level of levels){
+   for(let i=0;i<25;i++){
+     const t=themes[i%themes.length]; let text=t.base, task="Transformez cette phrase en phrase administrative.";
+     let correction=t.corr;
+     if(level==="Intermédiaire"){text=t.base+" Cette situation crée des difficultés dans l'organisation du service.";task="Regroupez les deux idées en une phrase administrative claire.";correction=t.corr+" Cette situation appelle une adaptation de l'organisation du service."}
+     if(level==="Concours"){text=t.base+" Plusieurs remontées internes confirment cette difficulté.";task="Rédigez un court diagnostic administratif en deux phrases.";correction=t.corr+" Les remontées internes confirment la nécessité d'un diagnostic partagé et d'une réponse organisée."}
+     if(level==="Expert"){text=t.base+" La direction souhaite disposer d'une proposition opérationnelle.";task="Rédigez une réponse structurée : constat, enjeu et action proposée.";correction=t.corr+" L'enjeu consiste à sécuriser la continuité du service public par un plan d'action progressif, piloté et évalué."}
+     arr.push({id,level,icon:levelData[level].icon,badge:levelData[level].badge,theme:t.theme,goal:levelData[level].desc,text,task,keys:t.keys,vocab:t.vocab,correction,points:levelData[level].points}); id++;
+   }
+ }
+ return arr;
+}
+const exercises=makeExercises();
+let currentLevel="Débutant";
+let progress=JSON.parse(localStorage.getItem("attacheProgressV4")||"{}");
+function save(){localStorage.setItem("attacheProgressV4",JSON.stringify(progress));}
+function normalize(s){return (s||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/œ/g,"oe");}
+function escapeHTML(s){return String(s||"").replace(/[&<>'"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;","\"":"&quot;"}[m]));}
+function isGibberish(answer){
+ const raw=(answer||"").trim(); if(raw.length<25)return true;
+ const words=normalize(raw).match(/[a-z]{2,}/g)||[]; if(words.length<5)return true;
+ const vowels=(normalize(raw).match(/[aeiouy]/g)||[]).length; const letters=(normalize(raw).match(/[a-z]/g)||[]).length;
+ if(letters>0 && vowels/letters<0.22)return true;
+ const longBad=words.filter(w=>w.length>10&&!/[aeiouy]{2}/.test(w)).length; if(longBad>=2)return true;
+ return false;
+}
+function analyzeAnswer(ex,answer){
+ const n=normalize(answer); const max=ex.points; let details=[];
+ if(isGibberish(answer)){return {points:0,percent:0,status:"bad",details:["Réponse trop courte, incohérente ou non exploitable.","Aucun point attribué."],found:[]};}
+ const keyNorm=ex.keys.map(k=>normalize(k));
+ const found=keyNorm.filter(k=>n.includes(k.split(" ")[0]));
+ const keyScore=Math.min(40,Math.round((found.length/keyNorm.length)*40));
+ const adminTerms=["besoin","enjeu","difficulte","amelioration","organisation","collectivite","service public","accompagnement","mise en oeuvre","qualite","continuite","diagnostic","plan","demarche","coordination","securiser","favoriser","renforcer","adapter","identifier"];
+ const adminFound=adminTerms.filter(t=>n.includes(t));
+ const adminScore=Math.min(25,adminFound.length*5);
+ const structureScore=(/[.;]/.test(answer)&&answer.split(/\s+/).length>=12)?20:(answer.split(/\s+/).length>=10?12:6);
+ const neutralBad=["nul","catastrophe","honteux","incapable","n'importe quoi","grave"].some(w=>n.includes(normalize(w)));
+ const neutralScore=neutralBad?0:10;
+ const capsBad=(answer.match(/[A-ZÀ-Ÿ]{5,}/g)||[]).length>2; const orthoScore=capsBad?0:5;
+ const totalPercent=Math.max(0,Math.min(100,keyScore+adminScore+structureScore+neutralScore+orthoScore));
+ const pts=Math.round(max*totalPercent/100);
+ details.push(`Mots-clés repérés : ${found.length}/${keyNorm.length} (${keyScore}/40)`);
+ details.push(`Vocabulaire administratif : ${adminFound.length} terme(s) repéré(s) (${adminScore}/25)`);
+ details.push(`Structure de phrase : ${structureScore}/20`);
+ details.push(`Neutralité administrative : ${neutralScore}/10`);
+ details.push(`Présentation / lisibilité : ${orthoScore}/5`);
+ let status= totalPercent>=70?"ok": totalPercent>=40?"warn":"bad";
+ return {points:pts,percent:totalPercent,status,details,found};
+}
+function renderLevels(){
+ document.getElementById("levelCards").innerHTML=Object.entries(levelData).map(([name,d])=>`<div class="level-card ${currentLevel===name?'active':''}" onclick="setLevel('${name}')"><div class="level-icon">${d.icon}</div><h3>${name}</h3><p><strong>${d.badge}</strong><br><span class="small">${d.desc}</span></p></div>`).join("");
+}
+function renderThemeFilter(){
+ const select=document.getElementById("themeFilter"); const current=select.value||"Tous";
+ const opts=["Tous",...new Set(exercises.map(e=>e.theme))]; select.innerHTML=opts.map(t=>`<option ${t===current?'selected':''}>${t}</option>`).join("");
+}
+function setLevel(level){currentLevel=level;renderLevels();renderExercises();}
+function exerciseHTML(e){
+ const st=progress[e.id]||{}; const status=st.status; const badge=status==="done"?'<span class="badge ok">Réussi</span>':status==="review"?'<span class="badge warn">À revoir</span>':'';
+ const vocabRows=Object.entries(e.vocab).map(([a,b])=>`<tr><td>${escapeHTML(a)}</td><td>${escapeHTML(b)}</td></tr>`).join("");
+ const analysis=st.analysis?analysisHTML(e,st.analysis,true):"";
+ return `<article class="exercise" id="ex-${e.id}"><div class="exercise-head"><div><h3>${e.icon} Exercice ${e.id} — ${e.level}</h3><span class="badge">${e.theme}</span>${badge}</div><button class="light" onclick="toggleCorrection(${e.id})">👀 Voir / masquer la correction</button></div><div class="mission"><strong>🎯 Mission :</strong> ${escapeHTML(e.task)}<br><span class="small">But : ${escapeHTML(e.goal)} — maximum ${e.points} points.</span></div><h4>📄 Texte du dossier</h4><div class="doc-text">${escapeHTML(e.text)}</div><div class="steps"><div class="step"><h3>🔍 Étape 1 — Je repère</h3><p class="small">Les mots importants à ne pas oublier :</p>${e.keys.map(k=>`<span class="badge">${escapeHTML(k)}</span>`).join("")}</div><div class="step"><h3>🧠 Étape 2 — Je traduis</h3><table class="vocab-table"><tr><th>Langage courant</th><th>Langage administratif</th></tr>${vocabRows}</table></div></div><h4>✍️ Étape 3 — À vous de jouer</h4><textarea id="ans-${e.id}" placeholder="Rédigez ici votre réponse administrative...">${escapeHTML(st.answer||"")}</textarea><div class="controls"><button class="good" onclick="validateExercise(${e.id})">✅ Analyser ma réponse</button><button class="orange" onclick="markReview(${e.id})">↩️ Marquer à revoir</button><button class="light" onclick="clearExercise(${e.id})">Retirer le statut</button></div><div id="analysis-${e.id}">${analysis}</div><div class="correction" id="corr-${e.id}"><strong>Correction proposée :</strong><br>${escapeHTML(e.correction)}</div></article>`;
+}
+function analysisHTML(e,a,show){
+ const cls=a.status==="bad"?"bad":a.status==="warn"?"warn":"";
+ const label=a.status==="ok"?"Réponse satisfaisante":a.status==="warn"?"Réponse partielle à améliorer":"Réponse insuffisante";
+ return `<div class="analysis-box ${cls} ${show?'show':''}"><h3>📊 Analyse automatique — ${label}</h3><p><strong>${a.points} / ${e.points} points</strong> — ${a.percent}%</p><div class="mini-bar"><span style="width:${a.percent}%"></span></div><ul>${a.details.map(d=>`<li>${escapeHTML(d)}</li>`).join("")}</ul></div>`;
+}
+function renderExercises(){
+ const theme=document.getElementById("themeFilter").value||"Tous";
+ const list=exercises.filter(e=>(currentLevel==="Tous"||e.level===currentLevel)&&(theme==="Tous"||e.theme===theme));
+ document.getElementById("exerciseList").innerHTML=list.map(exerciseHTML).join(""); updateStats();
+}
+function toggleCorrection(id){document.getElementById("corr-"+id)?.classList.toggle("show");}
+function validateExercise(id){
+ const ex=exercises.find(e=>e.id===id); const answer=document.getElementById("ans-"+id).value; const analysis=analyzeAnswer(ex,answer);
+ progress[id]={status:analysis.points>0?"done":"review",answer,points:analysis.points,analysis}; save();
+ document.getElementById("analysis-"+id).innerHTML=analysisHTML(ex,analysis,true); updateStats(); renderExercises(); setTimeout(()=>document.getElementById("ex-"+id)?.scrollIntoView({behavior:"smooth",block:"center"}),50);
+}
+function markReview(id){const answer=document.getElementById("ans-"+id)?.value||"";progress[id]={status:"review",answer,points:0,analysis:{points:0,percent:0,status:"warn",details:["Exercice marqué à revoir."],found:[]}};save();renderExercises();}
+function clearExercise(id){delete progress[id];save();renderExercises();}
+function resetProgress(){if(confirm("Remettre tous les scores à zéro ?")){progress={};save();renderExercises();}}
+function updateStats(){
+ const vals=Object.entries(progress).map(([id,p])=>({id:Number(id),...p})); const done=vals.filter(p=>p.status==="done"&&p.points>0).length; const score=vals.reduce((s,p)=>s+(p.points||0),0); const total=exercises.reduce((s,e)=>s+e.points,0); const pct=Math.round(score/total*100);
+ document.getElementById("doneCount").textContent=done; document.getElementById("scoreCount").textContent=`${score} / ${total}`; document.getElementById("successRate").textContent=pct+"%"; document.getElementById("bar").style.width=pct+"%";
+ let rank="Apprenti rédacteur"; if(score>=1200)rank="Attaché territorial"; else if(score>=750)rank="Futur attaché"; else if(score>=300)rank="Chargé de mission"; document.getElementById("rankName").textContent=rank;
+ const badges=[]; if(done>=1)badges.push("🏅 Première reformulation"); if(done>=10)badges.push("📘 Régularité"); if(score>=300)badges.push("🔵 Chargé de mission"); if(score>=750)badges.push("🟠 Niveau concours"); if(score>=1200)badges.push("🔴 Niveau expert");
+ document.getElementById("badges").innerHTML=badges.map(b=>`<span class="badge ok">${b}</span>`).join("");
+}
+renderLevels();renderThemeFilter();renderExercises();
+</script>
+</body>
+</html>
